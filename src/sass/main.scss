@@ -1,0 +1,45 @@
+@layer reset,
+components;
+
+@layer reset {
+
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@layer components {
+    html {
+        background-color:black;
+    }
+
+    html {
+        scroll-snap-type: y mandatory;
+    }
+
+    section {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        color: whitesmoke;
+        position: relative;
+        scroll-snap-align: start;
+
+        h1 {
+            font-size: 3rem;
+            font-family: Poppins;
+            mix-blend-mode: difference;
+        }
+    }
+
+    canvas#webgl {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
